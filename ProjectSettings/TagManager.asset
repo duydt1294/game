@@ -6,6 +6,7 @@ TagManager:
   tags:
   - MatDat
   - Ground
+  - Win
   layers:
   - Default
   - TransparentFX
@@ -42,16 +43,4 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
-    locked: 0
-  - name: backgruond
-    uniqueID: 1292280839
-    locked: 0
-  - name: cot
-    uniqueID: 939804641
-    locked: 0
-  - name: Player
-    uniqueID: 2851479727
-    locked: 0
-  - name: Ground
-    uniqueID: 2726619135
     locked: 0
