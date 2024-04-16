@@ -6,6 +6,7 @@ TagManager:
   tags:
   - MatDat
   - Ground
+  - Next
   layers:
   - Default
   - TransparentFX
@@ -43,15 +44,18 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: backgruond
-    uniqueID: 1292280839
+  - name: background
+    uniqueID: 4005924357
     locked: 0
-  - name: cot
-    uniqueID: 939804641
+  - name: background2
+    uniqueID: 2951692813
     locked: 0
-  - name: Player
-    uniqueID: 2851479727
+  - name: decor
+    uniqueID: 437097681
     locked: 0
-  - name: Ground
-    uniqueID: 2726619135
+  - name: ground
+    uniqueID: 1361761171
+    locked: 0
+  - name: player
+    uniqueID: 2464020453
     locked: 0

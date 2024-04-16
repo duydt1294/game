@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -55,7 +56,7 @@ public class PlayerController : MonoBehaviour
         {
             rb.sharedMaterial = normalMat;
         }
-        if (isGrounded) 
+        if (isGrounded)
         {
             animator.SetBool("IsJumping", false);
             animator.SetBool("IsFalling", false);
@@ -72,7 +73,7 @@ public class PlayerController : MonoBehaviour
             rb.velocity = new Vector2(0.0f, rb.velocity.y);
         }
 
-        if (jumpValue >= 19f && isGrounded)//Add inactive
+        if (jumpValue >= 20f && isGrounded)//Add inactive
         {
             float tempx = moveInput * walkSpeed;
             float tempy = jumpValue;
@@ -129,6 +130,14 @@ public class PlayerController : MonoBehaviour
     {
         Gizmos.color = Color.green;
         Gizmos.DrawCube(new Vector2(gameObject.transform.position.x, gameObject.transform.position.y - 1f), new Vector2(0.9f, 0.2f));
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.tag == "Next")
+        {
+            SceneManager.LoadScene("Nexttt");
+        }
     }
 
 }
